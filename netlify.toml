@@ -1,0 +1,10 @@
+# Netlify: ensure devDependencies and tooling install, and use an LTS Node
+# that matches react-scripts 5 well. See https://docs.netlify.com/configure-builds/file-based-configuration/
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "20"
+  # If NODE_ENV/NPM_CONFIG_PRODUCTION skips installs, this forces a full tree.
+  NPM_CONFIG_PRODUCTION = "false"
