@@ -103,4 +103,4 @@ Stack and tooling belong to their respective authors; the experience is ours to 
 
 ---
 
-*Built with care in Bordj El Kiffan and in your editor.*
+*Built with care by khadidja.*
