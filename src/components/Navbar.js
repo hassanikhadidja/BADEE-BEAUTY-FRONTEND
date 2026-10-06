@@ -59,10 +59,11 @@ export default function Navbar({ setCartOpen, setWishlistOpen }) {
             ) : (
               <Link
                 to="/login"
+                className="nav-signin"
                 style={{ border: "none", padding: "0 16px", minHeight: 50, cursor: "pointer", fontSize: 12, color: "#3A5A35", fontFamily: "'Josefin Sans',sans-serif", letterSpacing: ".04em", display: "flex", alignItems: "center", gap: 6, fontWeight: 600, textDecoration: "none" }}
               >
                 <IconImg name="email" height={16} alt="" />
-                {t.signIn}
+                <span className="nav-signin-label">{t.signIn}</span>
               </Link>
             )}
           </div>

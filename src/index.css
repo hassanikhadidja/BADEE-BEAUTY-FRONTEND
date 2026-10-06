@@ -1929,44 +1929,36 @@ footer a:hover {
 
 @media (max-width: 520px) {
   .nav-utility-inner {
-    flex-wrap: wrap;
-    padding: 8px 0;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 6px 0;
+    gap: 6px;
   }
   .nav-utility-left {
-    flex: 1 1 100%;
-    order: 1;
+    flex: 1 1 auto;
+    min-width: 0;
   }
   .nav-utility-actions {
-    order: 2;
-    margin-left: auto;
+    margin-left: 0;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+  .nav-signin {
+    min-width: 0;
+    padding: 0 8px !important;
+    gap: 4px !important;
+    font-size: 11px !important;
+  }
+  .nav-signin-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .nav-user-name {
+    max-width: 88px;
   }
   .nav-wish-label,
-  .nav-cart-label {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
-  }
-  .nav-utility-actions .btn-pink {
-    min-width: 44px;
-    min-height: 44px;
-    justify-content: center;
-    padding: 10px 12px !important;
-  }
-  .nav-utility-actions button[title] {
-    min-width: 44px;
-    min-height: 44px;
-    justify-content: center;
-    padding: 10px 12px !important;
-  }
-}
-
-@media (max-width: 380px) {
+  .nav-cart-label,
   .nav-label-reorder {
     position: absolute;
     width: 1px;
@@ -1979,7 +1971,15 @@ footer a:hover {
     border: 0;
   }
   .nav-reorder-btn {
-    padding: 0 12px !important;
+    flex-shrink: 0;
+    padding: 0 10px !important;
+  }
+  .nav-utility-actions .btn-pink,
+  .nav-utility-actions button[title] {
+    min-width: 40px;
+    min-height: 40px;
+    justify-content: center;
+    padding: 8px 10px !important;
   }
 }
 
