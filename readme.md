@@ -143,5 +143,5 @@ src/
 </p>
 
 <p align="center">
-  Built with care by <strong>khadidja</strong>.
+  Built with care by <strong>Berry Studio</strong>.
 </p>
